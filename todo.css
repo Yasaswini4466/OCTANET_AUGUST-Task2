@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bktodo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    width: 97.75%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo {
+    height: 50px;
+}
+.auth-buttons button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.auth-buttons button:hover {
+    background-color: #1c1c1c;
+}
+.todo-container {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 
+        0px 6px 12px rgba(0, 0, 0, 0.3), /* Increased drop shadow for more depth */
+        0px 0px 20px rgba(0, 255, 255, 0.8); /* Enhanced glowing border shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-container, .tasks-container {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    margin-bottom: 20px;
+}
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type="text"] {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #45a049;
+}
+.tasks-container nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.tasks-container nav button {
+    margin-right: 10px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+.tasks-container li button {
+    background-color: red;
+    border-radius: 5px;
+}
+.delete-btn {
+    background-color: red;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+.auth-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+}
+.auth-form form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.auth-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+.auth-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+.auth-form button[type="button"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+.auth-form button[type="button"]:hover {
+    background-color: #e53935;
+}
+.auth-form p {
+    margin-top: 20px;
+}
+.auth-form a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.auth-form a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+

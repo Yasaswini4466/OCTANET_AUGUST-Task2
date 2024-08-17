@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Log In</h1>
+    </header>
+    <div class="auth-form">
+        <form onsubmit="event.preventDefault(); window.location.href='todo.html';">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+            <button type="button" onclick="alert('Password reset link sent to your email');">Forgot Password</button>
+            <p>If you are not signed in, <a href="signin.html">Sign In here</a></p>
+        </form>
+    </div>
+</body>
+</html>

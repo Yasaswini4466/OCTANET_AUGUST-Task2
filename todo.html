@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo"> 
+        <h1>Todo List</h1>
+        <div class="auth-buttons">
+            <button onclick="location.href='signin.html'">Sign In</button>
+            <button onclick="location.href='login.html'">Log In</button>
+        </div>
+    </header>
+
+    <div class="todo-container">
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <div class="tasks-container">
+            <nav>
+                <button onclick="filterTasks('all')">All</button>
+                <button onclick="filterTasks('pending')">Pending</button>
+                <button onclick="filterTasks('completed')">Completed</button>
+            </nav>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
